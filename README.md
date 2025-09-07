@@ -28,7 +28,7 @@ It also includes **form validations, localStorage persistence, dark mode toggle,
 
 ---
 
-## 🛠️ Screenshots
+## 📸 Screenshots
 
 <img width="1311" height="695" alt="image" src="https://github.com/user-attachments/assets/a7f5c450-525b-4f32-aeb2-22b8859f73ef" />
 
