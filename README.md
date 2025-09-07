@@ -28,6 +28,14 @@ It also includes **form validations, localStorage persistence, dark mode toggle,
 
 ---
 
+## 🛠️ Screenshots
+
+<img width="1311" height="695" alt="image" src="https://github.com/user-attachments/assets/a7f5c450-525b-4f32-aeb2-22b8859f73ef" />
+
+<img width="1279" height="685" alt="image" src="https://github.com/user-attachments/assets/15d367db-a0c1-475e-9953-d2cae7235d4e" />
+
+---
+
 ## 🚀 Installation & Setup
 
 1. **Clone the repository**
