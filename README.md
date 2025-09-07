@@ -1,12 +1,36 @@
-# React + Vite
+# 📘 Student Management Dashboard  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **React-based dashboard** to manage students.  
+This project allows users to **add, edit, delete, search, and filter students**, with course data fetched from a **MockAPI**.  
+It also includes **form validations, localStorage persistence, dark mode toggle, and responsive design**.  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
+- ➕ **Add, Edit, Delete students**  
+- 🔍 **Search students by name**  
+- 🎯 **Filter students by course**  
+- ✅ **Form validation** (name, email, course, image required)  
+- 🌐 **API integration** → Course data fetched from **MockAPI** (customized with extra courses)  
+- 🌙 **Dark mode / ☀️ Light mode toggle**  
+- 💾 **localStorage persistence** → students remain after refresh  
+- 📱 **Responsive design** with pure CSS (no frameworks)  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+- **React (Vite)**  
+- **Context API** for global state  
+- **React Hooks** → `useState`, `useEffect`, `useMemo`, `useContext`  
+- **MockAPI** for fetching courses  
+- **localStorage** for persistence  
+- **Pure CSS** (modern & responsive)  
+
+---
+
+## 🚀 Installation & Setup
+
+1. **Clone the repository**
+   ```sh
+   git clone https://github.com/your-username/student-dashboard.git
+   cd student-dashboard
