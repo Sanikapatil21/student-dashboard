@@ -1,0 +1,277 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #eef2f3, #dfe9f3);
+  min-height: 100vh;
+  color: #333;
+}
+
+.app-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+/* === Form === */
+.student-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.student-form:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.student-form input,
+.student-form select {
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border 0.2s ease;
+}
+
+.student-form input:focus,
+.student-form select:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.4);
+}
+
+.student-form button {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.student-form button:hover {
+  background: linear-gradient(135deg, #0056b3, #003d80);
+  transform: translateY(-2px);
+}
+
+/* === Student List === */
+.student-list {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+}
+
+.student-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.student-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.student-card img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 3px solid #007bff;
+}
+
+.student-card h3 {
+  margin: 8px 0 5px;
+  font-size: 18px;
+  color: #222;
+}
+
+.student-card p {
+  margin: 3px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.student-card button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.student-card button:first-of-type {
+  background: #ffc107;
+  color: #333;
+}
+
+.student-card button:first-of-type:hover {
+  background: #e0a800;
+  transform: translateY(-2px);
+}
+
+.student-card button:last-of-type {
+  background: #dc3545;
+  color: #fff;
+  margin-left: 8px;
+}
+
+.student-card button:last-of-type:hover {
+  background: #b02a37;
+  transform: translateY(-2px);
+}
+
+/* === Error & Loader === */
+.error {
+  color: #d9534f;
+  font-size: 13px;
+  margin-top: -5px;
+}
+
+.loader {
+  text-align: center;
+  font-size: 20px;
+  padding: 40px;
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* === Filter Section === */
+.filter-container {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.filter-container input,
+.filter-container select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.filter-container input:focus,
+.filter-container select:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.4);
+}
+
+/* === Responsive Adjustments === */
+@media (max-width: 600px) {
+  .app-container {
+    padding: 10px;
+  }
+
+  .student-form {
+    padding: 15px;
+  }
+
+  .student-card {
+    padding: 12px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+}
+/* === Dark Mode Toggle === */
+.dark-toggle {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: #444;
+  color: #fff;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.dark-toggle:hover {
+  background: #222;
+  transform: scale(1.05);
+}
+
+/* === Dark Mode Styles === */
+.app-container.dark {
+  background: #121212;
+  color: #e0e0e0;
+}
+
+.app-container.dark h1 {
+  color: #f5f5f5;
+}
+
+.app-container.dark .student-form,
+.app-container.dark .student-card {
+  background: #1e1e1e;
+  color: #ddd;
+  box-shadow: 0 3px 8px rgba(255, 255, 255, 0.05);
+}
+
+.app-container.dark input,
+.app-container.dark select {
+  background: #2b2b2b;
+  color: #eee;
+  border: 1px solid #444;
+}
+
+.app-container.dark input:focus,
+.app-container.dark select:focus {
+  border-color: #66aaff;
+  box-shadow: 0 0 4px rgba(102, 170, 255, 0.4);
+}
+
+.app-container.dark .student-card button:first-of-type {
+  background: #ffb347;
+  color: #222;
+}
+
+.app-container.dark .student-card button:last-of-type {
+  background: #e74c3c;
+  color: #fff;
+}
+
+.app-container.dark .loader {
+  color: #66aaff;
+}
+
+
+.app-container.dark .student-card h3 {
+  color: #ffffff; 
+}
+
+.app-container.dark .student-card p {
+  color: #cccccc; 
+}
+
