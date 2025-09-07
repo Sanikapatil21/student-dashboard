@@ -32,5 +32,5 @@ It also includes **form validations, localStorage persistence, dark mode toggle,
 
 1. **Clone the repository**
    ```sh
-   git clone https://github.com/your-username/student-dashboard.git
+   git clone https://github.com/Sanikapatil21/student-dashboard.git
    cd student-dashboard
